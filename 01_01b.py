@@ -1,6 +1,10 @@
 def count_words(paragraph):
-    #code goes here
-    return
+    words= paragraph.split()
+    #print(words)
+    count = dict()
+    for w in words:
+        count[w]=count.get(w,0)+1
+    return count
 
 def main():
     paragraph = """Nadia’s Garden Restaurant is the creation of husband and wife team Nadia and Timothy Arbore. 
